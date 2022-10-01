@@ -9,7 +9,10 @@ None of the arrays will be empty, so you don't have to worry about that!
 
 """
 
-def remove_every_other(my_list):
+from typing import List
+
+
+def remove_every_other(my_list) -> List:
   return my_list[0::2]
 
 print(remove_every_other([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
@@ -31,3 +34,5 @@ def remove_other_other_v3(my_list):
     if i % 2 == 0:
       result.append(my_list[i])
   return result
+
+remove_every_other.__doc__ = "A simple function that returns every other element inside the list parameter"
