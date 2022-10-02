@@ -11,18 +11,24 @@ Example (Input --> Output)
 Happy coding!
 
 """
+
+
 def reverse(st: str):
-  s = st.split()[::-1]
-  print(s)
-  l = list()
-  for i in s:
-    l.append(i)
-  return ' '.join(l)
+    s = st.split()[::-1]
+    print(s)
+    l = []
+    for i in s:
+        l.append(i)
+    return " ".join(l)
+
+
 print(reverse("Hello World"))
 print(reverse("Hi There."))
 
+
 def reverse_v2(st: str):
-  return ' '.join(reversed(st.split())).strip()
+    return " ".join(reversed(st.split())).strip()
+
 
 print(reverse_v2("Hello World"))
 print(reverse_v2("Hi There."))
