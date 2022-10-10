@@ -23,3 +23,14 @@ def permutations_func(s: str):
 
 print(permutations_func("ab"))
 print(permutations_func("aabb"))
+
+# A set makes a little more sense in this situation because we want unique
+# values
+
+
+def permutations_v2(s: str):
+    return list("".join(el) for el in set(perm(s)))
+
+
+print(permutations_v2("ab"))
+print(permutations_v2("aabb"))
