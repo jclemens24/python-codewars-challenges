@@ -22,3 +22,7 @@ def search(budget: int, prices: list[int]):
 print(search(3, [6, 1, 2, 9, 2]))
 print(search(10, [0, 0, 0]))
 print(search(10, []))
+
+
+def search_v2(budget: int, prices: list[int]):
+    return ",".join([str(price) for price in sorted(prices) if price <= budget])
